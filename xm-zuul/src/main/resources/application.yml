@@ -1,0 +1,23 @@
+server:
+  port: 8769
+
+spring:
+  application:
+    name: xm-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+zuul:
+  routes:
+
+    tb-feign:
+
+      path: /api-a/**
+
+      serviceId: xm-feign
+    tb-config-client:
+      path: /api-b/**
+      serviceId: xm-config-client
