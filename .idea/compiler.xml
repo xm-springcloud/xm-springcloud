@@ -10,11 +10,11 @@
         <module name="xm-config-client" />
         <module name="xm-provider" />
         <module name="xm-feign" />
+        <module name="xm-config-server" />
         <module name="xm-common" />
-        <module name="xm-service-api" />
         <module name="xm-eureka" />
         <module name="xm-zuul" />
-        <module name="xm-config-server" />
+        <module name="xm-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
